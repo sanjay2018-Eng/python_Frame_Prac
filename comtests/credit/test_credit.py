@@ -13,3 +13,4 @@ class Test_two(BaseClass):
 
     def test_in_develop_branch_credit(self):
         print("This is in develop branch in credit method")
+        print("Added by Original")
