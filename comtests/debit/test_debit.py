@@ -8,3 +8,4 @@ class Test_three(BaseClass):
         ctitle = self.driver.title
         print("entering checkbox "+ctitle)
         print("Added by original user")
+        print("Serial testing")
