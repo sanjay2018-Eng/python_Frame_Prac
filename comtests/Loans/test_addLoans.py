@@ -5,3 +5,5 @@ class Test_add():
         Added in architect branch
         '''
         print("From architect branch")
+        print("Added newly")
+
