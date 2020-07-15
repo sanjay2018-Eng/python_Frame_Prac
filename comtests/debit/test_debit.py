@@ -7,3 +7,4 @@ class Test_three(BaseClass):
         print("This is clicking on the checkbox Second")
         ctitle = self.driver.title
         print("entering checkbox "+ctitle)
+        print("Added by original user")
