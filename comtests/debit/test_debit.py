@@ -9,3 +9,6 @@ class Test_three(BaseClass):
         print("entering checkbox "+ctitle)
         print("Added by original user")
         print("Serial testing")
+
+    def test_in_develop_branch_debit(self):
+        print("This is in develop branch in debit method")

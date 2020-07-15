@@ -10,3 +10,6 @@ class Test_two(BaseClass):
         print("Added by sec")
         print("Added by original user")
         print("Parallel testing")
+
+    def test_in_develop_branch_credit(self):
+        print("This is in develop branch in credit method")
