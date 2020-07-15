@@ -1,0 +1,51 @@
+pipeline
+{
+agent any
+
+stages
+{
+stage('Build')
+{
+steps
+{
+echo 'deploying code
+}
+}
+
+stage('deploy')
+{
+steps
+{
+echo 'deploying code'
+}
+}
+
+
+stage('test')
+{
+steps
+{
+bat "py.test"
+}
+}
+
+
+stage('Unit testing')
+{
+steps
+{
+echo 'unit testing code'
+}
+}
+
+
+stage('Release')
+{
+steps
+{
+echo 'releasing the code'
+}
+}
+
+}
+}
