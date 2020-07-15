@@ -7,3 +7,4 @@ class Test_two(BaseClass):
         print("This is clicking on the checkbox first")
         ctitle = self.driver.title
         print("entering checkbox "+ctitle)
+        print("Added by sec")
