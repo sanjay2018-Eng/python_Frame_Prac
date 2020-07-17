@@ -3,14 +3,16 @@ from utilities.BaseClass import BaseClass
 
 class Test_two(BaseClass):
     def test_create_credit(self):
+        log = self.getLogger()
         self.driver.find_element_by_css_selector("input[id = 'checkBoxOption1']").click()
-        print("This is clicking on the checkbox first")
+        log.info("credit_This is clicking on the checkbox first_1")
         ctitle = self.driver.title
-        print("entering checkbox "+ctitle)
-        print("Added by sec")
-        print("Added by original user")
-        print("Parallel testing")
+        log.info("credit_entering checkbox_2 "+ctitle)
+        log.warning("credit_Added by sec_3")
+        log.info("credit_Added by original user_4")
+        log.info("credit_Parallel testing_5")
 
     def test_in_develop_branch_credit(self):
-        print("This is in develop branch in credit method")
-        print("Added by Original")
+        log = self.getLogger()
+        log.info("credit_This is in develop branch in credit method_6")
+        log.info("credit_Added by Original_7")

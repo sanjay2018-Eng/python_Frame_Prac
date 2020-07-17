@@ -1,0 +1,17 @@
+2020-07-16 18:35:29,235 : INFO : test_loan : Loan_Adding loan_8
+2020-07-16 18:35:29,271 : INFO : test_loan : Loan_Added newly_9
+2020-07-16 18:35:29,271 : INFO : test_loan : Loan_Added newly_10
+2020-07-16 18:35:29,491 : INFO : test_in_develop_branch_credit : credit_This is in develop branch in credit method_6
+2020-07-16 18:35:29,492 : INFO : test_in_develop_branch_credit : credit_Added by Original_7
+2020-07-16 18:35:29,625 : INFO : test_in_develop_branch_debit : debit_This is in develop branch in debit method_16
+2020-07-16 18:35:29,677 : INFO : test_create_credit : credit_This is clicking on the checkbox first_1
+2020-07-16 18:35:29,756 : INFO : test_create_credit : credit_entering checkbox_2 Practice Page
+2020-07-16 18:35:29,756 : WARNING : test_create_credit : credit_Added by sec_3
+2020-07-16 18:35:29,756 : INFO : test_create_credit : credit_Added by original user_4
+2020-07-16 18:35:29,757 : INFO : test_create_credit : credit_Parallel testing_5
+2020-07-16 18:35:30,098 : INFO : test_e2e : test_e2e_This is printing in the text box_101
+2020-07-16 18:35:30,107 : INFO : test_e2e : tesst_e2e_entering checkbox_11 Practice Page
+2020-07-16 18:35:30,209 : INFO : test_create_debit : debit_This is clicking on the checkbox Second_12
+2020-07-16 18:35:30,255 : INFO : test_create_debit : debit_entering checkbox_13 Practice Page
+2020-07-16 18:35:30,255 : INFO : test_create_debit : debit_Added by original user_14
+2020-07-16 18:35:30,256 : INFO : test_create_debit : debit_Serial testing_15

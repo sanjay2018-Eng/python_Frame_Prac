@@ -8,7 +8,9 @@ from utilities.BaseClass import BaseClass
 
 class TestOne(BaseClass):
     def test_e2e(self):
+        log = self.getLogger()
         self.driver.find_element_by_css_selector("input[id='name']").send_keys("Hello")
-        print("This is printing in the text box")
+        log.info("test_e2e_This is printing in the text box_101")
         ctitle = self.driver.title
-        print("entering checkbox " + ctitle)
+        log.info("tesst_e2e_entering checkbox_11 " + ctitle)
+        self.takescreenshot(self.driver, "Login")

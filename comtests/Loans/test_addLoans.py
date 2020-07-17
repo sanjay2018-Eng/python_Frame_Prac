@@ -1,4 +1,9 @@
-class Test_add():
+from utilities.BaseClass import BaseClass
+
+
+class Test_add(BaseClass):
     def test_loan(self):
-        print("Adding loan")
-        print("Added newly")
+        log = self.getLogger()
+        log.info("Loan_Adding loan_8")
+        log.info("Loan_Added newly_9")
+        log.info("Loan_Added newly_10")
