@@ -1,0 +1,20 @@
+2020-07-18 18:22:26,670 : INFO : test_alert_ok : 
+*** Executing test case for alert only with OK button *** 
+
+2020-07-18 18:22:26,744 : INFO : HomePage : Entering the text in alert text Box
+2020-07-18 18:22:26,744 : INFO : CustomMethods : Waiting for element with  locator name ID
+2020-07-18 18:22:26,991 : INFO : HomePage : clicking on the alert button
+2020-07-18 18:22:26,992 : INFO : CustomMethods : Waiting for element with  locator input[value='Alert'] css
+2020-07-18 18:22:27,176 : INFO : CustomMethods : Alert is present
+2020-07-18 18:22:27,183 : INFO : CustomMethods : clicked on accept in alert
+2020-07-18 18:22:37,340 : ERROR : CustomMethods : Alert not present
+2020-07-18 18:22:37,425 : INFO : test_alert_dismiss : 
+*** Executing test case for alert with both Ok and dismiss ***
+
+2020-07-18 18:22:37,425 : INFO : HomePage : Entering the text in alert text Box
+2020-07-18 18:22:37,426 : INFO : CustomMethods : Waiting for element with  locator name ID
+2020-07-18 18:22:38,210 : INFO : HomePage : clicking on the confirm button
+2020-07-18 18:22:38,211 : INFO : CustomMethods : Waiting for element with  locator //input[@id='confirmbtn'] xpath
+2020-07-18 18:22:38,386 : INFO : CustomMethods : Alert is present
+2020-07-18 18:22:38,395 : INFO : CustomMethods : Clicked on dismiss in alert
+2020-07-18 18:22:48,522 : ERROR : CustomMethods : Alert not present

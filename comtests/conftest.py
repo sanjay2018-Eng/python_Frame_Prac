@@ -23,6 +23,7 @@ def setup(request):
         #caps = DesiredCapabilities.FIREFOX
         #driver = webdriver.Remote(command_executor="http://localhost:4546/wd/hub", desired_capabilities=caps)
     driver.get("https://www.rahulshettyacademy.com/AutomationPractice/")
+    driver.implicitly_wait(10)
     driver.maximize_window()
     session = request.node
     for item in session.items:
