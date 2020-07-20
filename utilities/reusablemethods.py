@@ -197,3 +197,43 @@ class CustomMethods():
             return element.get_attribute("value")
         except:
             CustomMethods.log.info("In except block text not present")
+
+    def check_chBox_radioBtn(self, vlist, locator, locatortype):
+        try:
+            CustomMethods.log.info("Getting element with locator --> "+str(locator)+" -> "+str(locatortype))
+            eleList = self.getElements(locator, locatortype)
+            for ele in eleList:
+                CustomMethods.log.info("Text of element in list --> "+str(ele.get_attribute("value")))
+                text = ele.get_attribute("value")
+                for i in vlist:
+                    if text == i:
+                        if not ele.is_selected():
+                            ele.click()
+        except Exception as e:
+            CustomMethods.log.info("In except block of radio and checkbox")
+            CustomMethods.log.info(e)
+
+    def validate_ch_radio_is_selected(self, vlist, locator, locatortype):
+        try:
+            CustomMethods.log.info("Checking if the checkbox or radio button is selected")
+            elelist = self.getElements(locator, locatortype)
+            ele_not_selected = []
+            for ele in elelist:
+                text = ele.get_attribute("value")
+                for i in vlist:
+                    if text == i:
+                        if not ele.is_selected():
+                            ele_not_selected.append(text)
+            if len(ele_not_selected) == 0:
+                CustomMethods.log.info("All checkboxes/Radio Buttons are selected")
+                return True
+            else:
+                CustomMethods.log.error("Following checkbox or radio button are not selected ")
+                CustomMethods.log.info(ele_not_selected)
+                return False
+        except Exception as e:
+            CustomMethods.log.info(e)
+
+
+
+

@@ -1,3 +1,4 @@
+import pytest
 import pytest_check as check
 
 from pages.home.login_page import HomePage
@@ -6,6 +7,8 @@ from utilities.reusablemethods import CustomMethods
 
 
 class Test_dropdown_validation(BaseClass):
+
+    @pytest.mark.skip
     def test_dropdown_staticDropDown(self):
         log = self.getLogger()
         res = CustomMethods(self.driver)
@@ -14,6 +17,7 @@ class Test_dropdown_validation(BaseClass):
         log.info("Selected the option Option 2")
         check.is_true(res.compare_two_strings(hPage.get_selected_option(), "Option2"))
 
+    @pytest.mark.skip
     def test_allValues_In_DropDown(self):
         log = self.getLogger()
         res = CustomMethods(self.driver)
@@ -22,6 +26,7 @@ class Test_dropdown_validation(BaseClass):
         log.info("checking the count of values in drop down")
         check.is_true(count == 4)
 
+    @pytest.mark.skip
     def test_select_value_from_autosuggestion(self):
         log = self.getLogger()
         res = CustomMethods(self.driver)

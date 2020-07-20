@@ -28,6 +28,12 @@ class HomePage():
     autocomplete_locator = "autocomplete"
     autocomplete_locatortype = "id"
 
+    chkBoxList_locator = "div[id='checkbox-example'] input[type='checkbox']"
+    chkBoxList_locatortype = "css"
+
+    radioList_locator = "div[id='radio-btn-example'] input[name='radioButton']"
+    radioList_locatortype = "css"
+
     def enterDataInAlertBox(self, data):
         HomePage.log.info("Entering the text in alert text Box")
         self.res.sendKeysElement(data, self.alert_txt_box_locator, self.alert_box_loctype)
@@ -60,5 +66,13 @@ class HomePage():
         HomePage.log.info("Selecting value from autocomplete drop down --> "+value_to_select)
         self.res.sendKeysElement(inital, self.autocomplete_locator, self.autocomplete_locatortype)
         self.res.select_values_from_auto_sggestionDP(value_to_select, self.suggestiveDP_loator, self.suggestiveDP_locatortype)
+
+    def check_chBox(self, list_values):
+        HomePage.log.info("Selecting the checkbox")
+        self.res.check_chBox_radioBtn(list_values, self.chkBoxList_locator, self.chkBoxList_locatortype)
+
+    def check_radioBtn(self, list_values):
+        HomePage.log.info("Selecting the radio button")
+        self.res.check_chBox_radioBtn(list_values, self.radioList_locator, self.radioList_locatortype)
 
 
