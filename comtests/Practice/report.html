@@ -242,8 +242,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>result.html</h1>
-    <p>Report generated on 18-Jul-2020 at 18:22:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <h1>report.html</h1>
+    <p>Report generated on 20-Jul-2020 at 23:44:49 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.8.3</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 33.48 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 36.41 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">2 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -274,39 +274,70 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="skipped results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_alertDemo.py::TestAlert::test_alert_ok</td>
-          <td class="col-duration">10.70</td>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">test_alertDemo.py::TestAlert::test_alert_ok::setup</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m test_alert_ok:test_alertDemo.py:13 
-*** Executing test case for alert only with OK button *** 
-
-[32mINFO    [0m HomePage:login_page.py:29 Entering the text in alert text Box
-[32mINFO    [0m CustomMethods:reusablemethods.py:57 Waiting for element with  locator name ID
-[32mINFO    [0m HomePage:login_page.py:33 clicking on the alert button
-[32mINFO    [0m CustomMethods:reusablemethods.py:57 Waiting for element with  locator input[value=&#x27;Alert&#x27;] css
-[32mINFO    [0m CustomMethods:reusablemethods.py:77 Alert is present
-[32mINFO    [0m CustomMethods:reusablemethods.py:87 clicked on accept in alert
-[31m[1mERROR   [0m CustomMethods:reusablemethods.py:80 Alert not present<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
+            <div class="log">(&#x27;test_alertDemo.py&#x27;, 12, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_alertDemo.py::TestAlert::test_alert_dismiss</td>
-          <td class="col-duration">11.14</td>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">test_alertDemo.py::TestAlert::test_alert_dismiss::setup</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m test_alert_dismiss:test_alertDemo.py:24 
-*** Executing test case for alert with both Ok and dismiss ***
-
-[32mINFO    [0m HomePage:login_page.py:29 Entering the text in alert text Box
-[32mINFO    [0m CustomMethods:reusablemethods.py:57 Waiting for element with  locator name ID
-[32mINFO    [0m HomePage:login_page.py:37 clicking on the confirm button
-[32mINFO    [0m CustomMethods:reusablemethods.py:57 Waiting for element with  locator //input[@id=&#x27;confirmbtn&#x27;] xpath
-[32mINFO    [0m CustomMethods:reusablemethods.py:77 Alert is present
-[32mINFO    [0m CustomMethods:reusablemethods.py:95 Clicked on dismiss in alert
-[31m[1mERROR   [0m CustomMethods:reusablemethods.py:80 Alert not present<br/></div></td></tr></tbody></table></body></html>
+            <div class="log">(&#x27;test_alertDemo.py&#x27;, 24, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_checkDropDown.py::Test_dropdown_validation::test_dropdown_staticDropDown</td>
+          <td class="col-duration">0.56</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m HomePage:login_page.py:44 Selecting the value --&gt; Option2 from dropdown
+[32mINFO    [0m CustomMethods:reusablemethods.py:83 Waiting for visibility of element with  locator -&gt; dropdown-class-example id
+[32mINFO    [0m test_dropdown_staticDropDown:test_checkDropDown.py:14 Selected the option Option 2
+[32mINFO    [0m HomePage:login_page.py:55 Get selected option in dropdown
+[32mINFO    [0m CustomMethods:reusablemethods.py:83 Waiting for visibility of element with  locator -&gt; dropdown-class-example id
+[32mINFO    [0m CustomMethods:reusablemethods.py:161 The selected value is --&gt; Option2
+[32mINFO    [0m CustomMethods:reusablemethods.py:168 compare actual and expected
+[32mINFO    [0m CustomMethods:reusablemethods.py:169 Actual --&gt; Option2, Expected --&gt; Option2<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_checkDropDown.py::Test_dropdown_validation::test_allValues_In_DropDown</td>
+          <td class="col-duration">0.20</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m HomePage:login_page.py:48 Printing all values in drop down
+[32mINFO    [0m CustomMethods:reusablemethods.py:83 Waiting for visibility of element with  locator -&gt; dropdown-class-example id
+[32mINFO    [0m HomePage:login_page.py:51 Select
+[32mINFO    [0m HomePage:login_page.py:51 Option1
+[32mINFO    [0m HomePage:login_page.py:51 Option2
+[32mINFO    [0m HomePage:login_page.py:51 Option3
+[32mINFO    [0m test_allValues_In_DropDown:test_checkDropDown.py:22 checking the count of values in drop down<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_checkDropDown.py::Test_dropdown_validation::test_select_value_from_autosuggestion</td>
+          <td class="col-duration">1.15</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m HomePage:login_page.py:60 Selecting value from autocomplete drop down --&gt; austria
+[32mINFO    [0m CustomMethods:reusablemethods.py:71 Waiting for element with  locator autocomplete id
+[32mINFO    [0m CustomMethods:reusablemethods.py:83 Waiting for visibility of element with  locator -&gt; autocomplete id
+[32mINFO    [0m CustomMethods:reusablemethods.py:179 Selecting the value --&gt; austria from auto suggestion
+[32mINFO    [0m CustomMethods:reusablemethods.py:100 Count of elements displayed --&gt; 2
+[32mINFO    [0m CustomMethods:reusablemethods.py:195 Get the text from text box
+[32mINFO    [0m CustomMethods:reusablemethods.py:83 Waiting for visibility of element with  locator -&gt; autocomplete id
+[32mINFO    [0m test_select_value_from_autosuggestion:test_checkDropDown.py:31 Auto complete text --&gt; Austria
+[32mINFO    [0m CustomMethods:reusablemethods.py:168 compare actual and expected
+[32mINFO    [0m CustomMethods:reusablemethods.py:169 Actual --&gt; Austria, Expected --&gt; austria<br/></div></td></tr></tbody></table></body></html>
