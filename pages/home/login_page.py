@@ -34,6 +34,12 @@ class HomePage():
     radioList_locator = "div[id='radio-btn-example'] input[name='radioButton']"
     radioList_locatortype = "css"
 
+    openWindow_locator = "button[id='openwindow']"
+    openwindow_locatortype = "css"
+
+    iframe_locator = "courses-iframe"
+    iframe_locatortype = "id"
+
     def enterDataInAlertBox(self, data):
         HomePage.log.info("Entering the text in alert text Box")
         self.res.sendKeysElement(data, self.alert_txt_box_locator, self.alert_box_loctype)
@@ -74,5 +80,13 @@ class HomePage():
     def check_radioBtn(self, list_values):
         HomePage.log.info("Selecting the radio button")
         self.res.check_chBox_radioBtn(list_values, self.radioList_locator, self.radioList_locatortype)
+
+    def clickOpewindowBtn(self):
+        HomePage.log.info("clicking on the open window button")
+        self.res.clickElement(self.openWindow_locator, self.openwindow_locatortype)
+
+    def switch_to_frame(self):
+        HomePage.log.info("Switch to frame")
+        self.res.switch_to_frame(self.iframe_locator)
 
 

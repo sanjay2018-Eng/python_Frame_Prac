@@ -1,4 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.select import Select
@@ -234,6 +235,69 @@ class CustomMethods():
         except Exception as e:
             CustomMethods.log.info(e)
 
+    def getCurrentWindowHandle(self):
+        try:
+            parentHandle = self.driver.current_window_handle
+            CustomMethods.log.info("CUrrent window handle is --> "+str(parentHandle))
+            return parentHandle
+        except Exception as e:
+            CustomMethods.log.error("Except -> getCurrentWindowHandle -> window not present")
+
+    def switchToChildWindow(self):
+        try:
+            parentHandle = self.getCurrentWindowHandle()
+            allhandles = self.driver.window_handles
+            for handle in allhandles:
+                if not handle == parentHandle:
+                    self.driver.switch_to.window(handle)
+                    CustomMethods.log.info("Switched to child window "+str(handle))
+                    break
+        except:
+            CustomMethods.log.info("Except -> switchToChildWindow -> child window not present")
+
+    def getcurrentURL(self):
+        try:
+            cUrl = self.driver.current_url
+            CustomMethods.log.info("Current Url is --> "+str(cUrl))
+            return cUrl
+        except:
+            CustomMethods.log.error("Except block --> getcurrentURL --> Page not present")
+
+    def switchToParentWindow(self):
+        try:
+            self.driver.switch_to.window(self.driver.window_handles[0])
+        except:
+            CustomMethods.log.error("Except -> switchToParentWindow -> not switched to parent window")
 
 
+    def switch_to_frame(self, frame_reference):
+        try:
+            CustomMethods.log.info("switching to frame with reference --> "+frame_reference)
+            self.driver.switch_to.frame(frame_reference)
+        except Exception as e:
+            CustomMethods.log.error("Except block -> switch_to_frame - > not swtiched")
 
+    def switch_to_parent_frame(self):
+        try:
+            CustomMethods.log.info("Switching to parent frame")
+            self.driver.switch_to.default_content()
+        except:
+            CustomMethods.log.error("Except block -> switch_to_parent_frame - > not swtiched")
+
+    def mouse_hover_element(self, locator, locatortype):
+        try:
+            CustomMethods.log.info("mouse_hover_element -> "+str(locator)+" -> "+str(locatortype))
+            ele = self.getElement(locator, locatortype)
+            action = ActionChains(self.driver)
+            action.move_to_element(ele).perform()
+        except Exception as e:
+            CustomMethods.log.error("Except block -> Mouse hover not happened")
+
+    def mouse_hover_click(self, locator, locatortype):
+        try:
+            CustomMethods.log.info("mouse_hover_element -> " + str(locator) + " -> " + str(locatortype))
+            ele = self.getElement(locator, locatortype)
+            action = ActionChains(self.driver)
+            action.move_to_element(ele).click().perform()
+        except Exception as e:
+            CustomMethods.log.error("Except block -> mouse_hover_click not happened")

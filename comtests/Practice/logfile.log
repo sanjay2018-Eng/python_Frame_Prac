@@ -1,0 +1,110 @@
+2020-07-21 21:30:40,321 : INFO : test_validate_radioBtn_selection : 
+*** Test Case - validate_radioBtn_selection ***
+
+2020-07-21 21:30:40,414 : INFO : HomePage : Selecting the radio button
+2020-07-21 21:30:40,414 : INFO : CustomMethods : Getting element with locator --> div[id='radio-btn-example'] input[name='radioButton'] -> css
+2020-07-21 21:30:40,496 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:30:40,518 : INFO : CustomMethods : Text of element in list --> radio1
+2020-07-21 21:30:40,715 : INFO : CustomMethods : Text of element in list --> radio2
+2020-07-21 21:30:40,852 : INFO : CustomMethods : Text of element in list --> radio3
+2020-07-21 21:30:40,860 : INFO : CustomMethods : Checking if the checkbox or radio button is selected
+2020-07-21 21:30:40,928 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:30:41,034 : INFO : CustomMethods : All checkboxes/Radio Buttons are selected
+2020-07-21 21:30:41,057 : INFO : CustomMethods : mouse_hover_element -> mousehover -> id
+2020-07-21 21:30:41,058 : INFO : CustomMethods : Waiting for visibility of element with  locator -> mousehover id
+2020-07-21 21:41:12,264 : INFO : test_validate_radioBtn_selection : 
+*** Test Case - validate_radioBtn_selection ***
+
+2020-07-21 21:41:12,312 : INFO : HomePage : Selecting the radio button
+2020-07-21 21:41:12,312 : INFO : CustomMethods : Getting element with locator --> div[id='radio-btn-example'] input[name='radioButton'] -> css
+2020-07-21 21:41:12,408 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:41:12,430 : INFO : CustomMethods : Text of element in list --> radio1
+2020-07-21 21:41:12,663 : INFO : CustomMethods : Text of element in list --> radio2
+2020-07-21 21:41:12,849 : INFO : CustomMethods : Text of element in list --> radio3
+2020-07-21 21:41:12,859 : INFO : CustomMethods : Checking if the checkbox or radio button is selected
+2020-07-21 21:41:12,914 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:41:12,954 : INFO : CustomMethods : All checkboxes/Radio Buttons are selected
+2020-07-21 21:41:12,973 : INFO : test_mousehover_click : 
+*** Test Case - test_mousehover_click ***
+
+2020-07-21 21:41:12,974 : INFO : CustomMethods : mouse_hover_element -> mousehover -> id
+2020-07-21 21:41:12,974 : INFO : CustomMethods : Waiting for visibility of element with  locator -> mousehover id
+2020-07-21 21:41:13,332 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //div[@class='mouse-hover-content'] xpath
+2020-07-21 21:42:34,012 : INFO : test_validate_radioBtn_selection : 
+*** Test Case - validate_radioBtn_selection ***
+
+2020-07-21 21:42:34,333 : INFO : HomePage : Selecting the radio button
+2020-07-21 21:42:34,333 : INFO : CustomMethods : Getting element with locator --> div[id='radio-btn-example'] input[name='radioButton'] -> css
+2020-07-21 21:42:34,436 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:42:34,463 : INFO : CustomMethods : Text of element in list --> radio1
+2020-07-21 21:42:34,605 : INFO : CustomMethods : Text of element in list --> radio2
+2020-07-21 21:42:34,732 : INFO : CustomMethods : Text of element in list --> radio3
+2020-07-21 21:42:34,739 : INFO : CustomMethods : Checking if the checkbox or radio button is selected
+2020-07-21 21:42:34,804 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:42:34,856 : INFO : CustomMethods : All checkboxes/Radio Buttons are selected
+2020-07-21 21:42:34,885 : INFO : test_mousehover_click : 
+*** Test Case - test_mousehover_click ***
+
+2020-07-21 21:42:34,885 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //div[@class='mouse-hover-content'] xpath
+2020-07-21 21:43:05,281 : ERROR : CustomMethods : Element with locator - //div[@class='mouse-hover-content'] xpathnot found
+2020-07-21 21:47:03,995 : INFO : test_validate_radioBtn_selection : 
+*** Test Case - validate_radioBtn_selection ***
+
+2020-07-21 21:47:04,046 : INFO : HomePage : Selecting the radio button
+2020-07-21 21:47:04,046 : INFO : CustomMethods : Getting element with locator --> div[id='radio-btn-example'] input[name='radioButton'] -> css
+2020-07-21 21:47:04,144 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:47:04,165 : INFO : CustomMethods : Text of element in list --> radio1
+2020-07-21 21:47:04,293 : INFO : CustomMethods : Text of element in list --> radio2
+2020-07-21 21:47:04,396 : INFO : CustomMethods : Text of element in list --> radio3
+2020-07-21 21:47:04,403 : INFO : CustomMethods : Checking if the checkbox or radio button is selected
+2020-07-21 21:47:04,461 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:47:04,502 : INFO : CustomMethods : All checkboxes/Radio Buttons are selected
+2020-07-21 21:47:04,528 : INFO : test_mousehover_click : 
+*** Test Case - test_mousehover_click ***
+
+2020-07-21 21:47:04,528 : INFO : CustomMethods : mouse_hover_element -> mousehover -> id
+2020-07-21 21:47:04,528 : INFO : CustomMethods : Waiting for visibility of element with  locator -> mousehover id
+2020-07-21 21:47:04,845 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //div[@class='mouse-hover-content'] xpath
+2020-07-21 21:47:04,884 : INFO : CustomMethods : mouse_hover_element -> //a[text()='Top'] -> xpath
+2020-07-21 21:47:04,884 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //a[text()='Top'] xpath
+2020-07-21 21:47:04,935 : ERROR : CustomMethods : Except block -> mouse_hover_click not happened
+2020-07-21 21:50:06,125 : INFO : test_validate_radioBtn_selection : 
+*** Test Case - validate_radioBtn_selection ***
+
+2020-07-21 21:50:06,140 : INFO : HomePage : Selecting the radio button
+2020-07-21 21:50:06,140 : INFO : CustomMethods : Getting element with locator --> div[id='radio-btn-example'] input[name='radioButton'] -> css
+2020-07-21 21:50:06,321 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:50:06,390 : INFO : CustomMethods : Text of element in list --> radio1
+2020-07-21 21:50:06,673 : INFO : CustomMethods : Text of element in list --> radio2
+2020-07-21 21:50:07,196 : INFO : CustomMethods : Text of element in list --> radio3
+2020-07-21 21:50:07,209 : INFO : CustomMethods : Checking if the checkbox or radio button is selected
+2020-07-21 21:50:07,307 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:50:07,367 : INFO : CustomMethods : All checkboxes/Radio Buttons are selected
+2020-07-21 21:50:07,393 : INFO : test_mousehover_click : 
+*** Test Case - test_mousehover_click ***
+
+2020-07-21 21:50:07,394 : INFO : CustomMethods : mouse_hover_element -> mousehover -> id
+2020-07-21 21:50:07,394 : INFO : CustomMethods : Waiting for visibility of element with  locator -> mousehover id
+2020-07-21 21:50:07,756 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //div[@class='mouse-hover-content'] xpath
+2020-07-21 21:50:07,792 : INFO : CustomMethods : mouse_hover_element -> //a[text()='Top'] -> xpath
+2020-07-21 21:50:07,792 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //a[text()='Top'] xpath
+2020-07-21 21:50:54,541 : INFO : test_validate_radioBtn_selection : 
+*** Test Case - validate_radioBtn_selection ***
+
+2020-07-21 21:50:54,632 : INFO : HomePage : Selecting the radio button
+2020-07-21 21:50:54,632 : INFO : CustomMethods : Getting element with locator --> div[id='radio-btn-example'] input[name='radioButton'] -> css
+2020-07-21 21:50:54,833 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:50:54,872 : INFO : CustomMethods : Text of element in list --> radio1
+2020-07-21 21:50:55,167 : INFO : CustomMethods : Text of element in list --> radio2
+2020-07-21 21:50:55,592 : INFO : CustomMethods : Text of element in list --> radio3
+2020-07-21 21:50:55,606 : INFO : CustomMethods : Checking if the checkbox or radio button is selected
+2020-07-21 21:50:55,707 : INFO : CustomMethods : Count of elements displayed --> 3
+2020-07-21 21:50:55,784 : INFO : CustomMethods : All checkboxes/Radio Buttons are selected
+2020-07-21 21:50:55,985 : INFO : test_mousehover_click : 
+*** Test Case - test_mousehover_click ***
+
+2020-07-21 21:50:55,985 : INFO : CustomMethods : mouse_hover_element -> mousehover -> id
+2020-07-21 21:50:55,986 : INFO : CustomMethods : Waiting for visibility of element with  locator -> mousehover id
+2020-07-21 21:50:56,317 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //div[@class='mouse-hover-content'] xpath
+2020-07-21 21:50:56,370 : INFO : CustomMethods : mouse_hover_element -> //a[text()='Top'] -> xpath
+2020-07-21 21:50:56,371 : INFO : CustomMethods : Waiting for visibility of element with  locator -> //a[text()='Top'] xpath
