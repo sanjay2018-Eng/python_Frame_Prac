@@ -2,9 +2,12 @@ from pages.frames.framePage import frame_Page_fields
 from utilities.BaseClass import BaseClass
 from utilities.reusablemethods import CustomMethods
 import pytest_check as check
+import pytest
 
 
 class Test_validate_mouse_hover(BaseClass):
+
+    @pytest.mark.skip
     def test_mousehover_click(self):
         log = self.getLogger()
         log.info("\n*** Test Case - test_mousehover_click ***\n")

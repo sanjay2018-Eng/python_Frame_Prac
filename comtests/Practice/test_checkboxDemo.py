@@ -17,7 +17,7 @@ class Test_checkbox(BaseClass):
         result = res.validate_ch_radio_is_selected(["option1", "option3"], hPage.chkBoxList_locator, hPage.chkBoxList_locatortype)
         check.is_true(result)
 
-    #@pytest.mark.skip
+    @pytest.mark.skip
     def test_validate_radioBtn_selection(self):
         log = self.getLogger()
         log.info("\n*** Test Case - validate_radioBtn_selection ***\n")

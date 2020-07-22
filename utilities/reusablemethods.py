@@ -171,6 +171,7 @@ class CustomMethods():
             if actual.lower() == expected.lower():
                 return True
             else:
+                CustomMethods.log.warning("Strings dont match -> Actual --> " + actual + ", Expected --> " + expected)
                 return False
         except:
             CustomMethods.log.info("In except block of Compare two strings")
